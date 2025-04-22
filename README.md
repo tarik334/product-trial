@@ -25,37 +25,37 @@ Le test de l'API se fait avec le projet `test-product-trial`, et donc en utilisa
 
 Les méthodes de l'API ne sont accessibles que par un token, pour pouvoir générer un token il faudrait tt d'abord ajouter des utilisateurs :
 
-url d'ajout d'un utilisateur :
+url d'ajout d'un utilisateur :  
 http://localhost:8080/test/account/{username}/{password}/{firstname}/{email}
 
-exemple d'ajout de 2 utilisateurs :
-http://localhost:8080/test/account/user/user/user/user@user.com
+exemple d'ajout de 2 utilisateurs :  
+http://localhost:8080/test/account/user/user/user/user@user.com  
 http://localhost:8080/test/account/admin/admin/admin/admin@admin.com
 
 ### Obtenir un token
 
-L'url d'obtention d'un token :
+L'url d'obtention d'un token :  
 http://localhost:8080/test/token/{email}/{password}
 
-exemple pour un utilisateur :
+exemple pour un utilisateur :  
 http://localhost:8080/test/token/user@user.com/user
 
-pour l'admin :
+pour l'admin :  
 http://localhost:8080/test/token/admin@admin.com/admin
 
 ### Méthodes de l'api :
 
-http://localhost:8080/test/products/add/{name}/{description}/{token}
-http://localhost:8080/test/products/list/{token}
-http://localhost:8080/test/products/get/{id}/{token}
-http://localhost:8080/test/products/update/{id}/{name}/{description}/{token}
+http://localhost:8080/test/products/add/{name}/{description}/{token}  
+http://localhost:8080/test/products/list/{token}  
+http://localhost:8080/test/products/get/{id}/{token}  
+http://localhost:8080/test/products/update/{id}/{name}/{description}/{token}  
 http://localhost:8080/test/products/delete/{id}/{token}
 
-http://localhost:8080/test/basket/get/{token}
-http://localhost:8080/test/basket/add/{id}/{quantity}/{token}
-http://localhost:8080/test/basket/delete/{id}/{quantity}/{token}
+http://localhost:8080/test/basket/get/{token}  
+http://localhost:8080/test/basket/add/{id}/{quantity}/{token}  
+http://localhost:8080/test/basket/delete/{id}/{quantity}/{token}  
 http://localhost:8080/test/basket/delete/{token}
 
-http://localhost:8080/test/wishlist/get/{token}
-http://localhost:8080/test/wishlist/add/{id}/{token}
+http://localhost:8080/test/wishlist/get/{token}  
+http://localhost:8080/test/wishlist/add/{id}/{token}  
 http://localhost:8080/test/wishlist/delete/{id}/{token}
